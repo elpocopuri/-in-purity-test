@@ -46,6 +46,7 @@ function calculate(){
         x += "%"
         document.getElementById("your_score").innerHTML = x;
         elm.style.display = "block";
+        window.scrollTo(0, 200000);
     } else {
         elm.style.display = "none";
     }
