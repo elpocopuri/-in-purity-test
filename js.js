@@ -12,7 +12,7 @@ function numberWangle(){
     var total = allBoxesVal()
     var userScore = 100 - ((score/total) * 100)
 
-    return userScore.toFixed(2);
+    return userScore.toFixed();
 }
 
 // get the value of the total pure score
@@ -43,7 +43,7 @@ function calculate(){
     var elm = document.getElementById("final_score");
     if (elm.style.display === "none") {
         x = String(numberWangle());
-        x += "%"
+       
         document.getElementById("your_score").innerHTML = x;
         elm.style.display = "block";
         window.scrollTo(0, 200000);
